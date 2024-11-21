@@ -143,3 +143,19 @@ function avviaStampaMessaggi() {
 }
 
 avviaStampaMessaggi();
+
+//gestione errore semplice
+function eseguiDivisione(dividendo, divisore) {
+    try {
+        if(divisore === 0) {
+            throw new Error("impossibile dividere per 0");
+        }
+        const risultato = dividendo / divisore;
+        console.log(`il risultato della divisione è: ${risultato}`);
+    }catch (errore) {
+        console.error("si è verificato un errore" + errore.message);
+    }
+}
+
+eseguiDivisione(10, 0);
+eseguiDivisione(10, 2);
