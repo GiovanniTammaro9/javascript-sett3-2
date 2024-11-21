@@ -26,3 +26,10 @@ persone.push({"nome": "ciro", "cognome": "de nicola", "eta": "42"});
 let updatejsonString = JSON.stringify(persone);
 
 console.log(updatejsonString);
+
+//template 
+let nome = "Giovanni";
+let cognome = "Tammaro";
+
+let stringa = `${nome} ${cognome}`;
+console.log(stringa);
