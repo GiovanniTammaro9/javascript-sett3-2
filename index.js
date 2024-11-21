@@ -49,3 +49,23 @@ citta: ${città}
 
 
 console.log(stringaMultilinea);
+
+// funzione con template literals
+
+function creaStringaPersona(persona) {
+    return `
+    altezza: ${persona.altezza}
+    hobbie: ${persona.hobbie}
+    interessi: ${persona.interessi}
+    `;
+};
+
+let persona = {
+    altezza: "1.90",
+    hobbie: "videogiochi",
+    interessi: "calcio"
+
+};
+
+let StringaPersona = creaStringaPersona(persona);
+console.log(StringaPersona);
