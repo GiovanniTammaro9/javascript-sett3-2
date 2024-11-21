@@ -89,3 +89,19 @@ if (status === "errore") {
 }else {
     console.log("la variabile ha un valore valido:" + status);
 }
+
+//console table e group
+let person = [
+    {nome: "Giovanni", cognome: "tammaro", eta: "29", citta: "napoli"},
+    {nome: "Federica", cognome: "Longobardi", eta: "27", citta: "napoli"},
+    {nome: "Giuseppe", cognome: "tammaro", eta: "45", citta: "napoli"},
+];
+//console.group
+console.group("Datu delle persone");
+//console.table
+console.table(person);
+//terminare il gruppo
+console.groupEnd();
+
+console.log("fine del raggruppamento");
+
