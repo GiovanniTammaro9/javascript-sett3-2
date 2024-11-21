@@ -105,3 +105,25 @@ console.groupEnd();
 
 console.log("fine del raggruppamento");
 
+//setTImeout
+function stampaMessaggio() {
+    console.log("questo messaggio viene stampato dopo 3 secondi");
+}
+//funzione che chiama settimeout
+function avvioMessaggio() {
+    setTimeout(stampaMessaggio, 3000);
+}
+
+avvioMessaggio();
+
+//setINterval
+
+function stampaMessaggio2() {
+    console.log("questo messaggio viene stampato ogni 3 secondi");
+}
+//funzione che chiama settimeout
+function avvioMessaggio2() {
+    setInterval(stampaMessaggio2, 3000);
+}
+
+avvioMessaggio2();
