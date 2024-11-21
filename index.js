@@ -78,3 +78,14 @@ let array = [1, 2, 3, 4, 5];
 console.log(numero);
 console.log(stringaEsempio);
 console.log(array);
+
+//console error e warn
+let status = "errore";
+//controllo del valore della variabile e stampa del messaggio corrispondente
+if (status === "errore") {
+    console.error("si è verificato un errore: la variabile ha valore `errore");
+}else if (status === "avviso") {
+    console.warn("attenzione la variabile ha valore `avviso");
+}else {
+    console.log("la variabile ha un valore valido:" + status);
+}
