@@ -69,3 +69,12 @@ let persona = {
 
 let StringaPersona = creaStringaPersona(persona);
 console.log(StringaPersona);
+
+// utilizzare console.log
+let numero = 30;
+let stringaEsempio = "Hello, World";
+let array = [1, 2, 3, 4, 5];
+
+console.log(numero);
+console.log(stringaEsempio);
+console.log(array);
