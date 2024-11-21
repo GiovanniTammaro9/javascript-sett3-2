@@ -127,3 +127,19 @@ function avvioMessaggio2() {
 }
 
 avvioMessaggio2();
+
+//clearinterval
+function stampaMessaggio3() {
+    console.log("questo messaggio viene stampato ogni secondo");
+}
+// avviare intervallo
+function avviaStampaMessaggi() {
+    const intervallo = setInterval(stampaMessaggio3, 1000);
+    //settimeout per fermare l'intervallo dopo 5 secondi
+    setTimeout(() => {
+        clearInterval(intervallo);
+        console.log("l'intervallo viene fermato dopo 5 secondi");
+    }, 5000);
+}
+
+avviaStampaMessaggi();
