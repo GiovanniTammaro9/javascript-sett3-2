@@ -33,3 +33,19 @@ let cognome = "Tammaro";
 
 let stringa = `${nome} ${cognome}`;
 console.log(stringa);
+
+//stringa multilinea con template literals
+let name = "giovanni";
+let surname = "tammaro";
+let eta = "29";
+let città = "napoli";
+
+let stringaMultilinea = `
+name: ${name}
+surname: ${surname}
+eta: ${eta}
+citta: ${città}
+`;
+
+
+console.log(stringaMultilinea);
